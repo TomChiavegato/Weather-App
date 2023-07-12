@@ -1,0 +1,320 @@
+/*--------- NAVBAR ---------*/
+li, a, button{
+  font-family: 'quicksand';
+  font-weight:500;
+  font-size: 16px;
+  color: rgb(212, 212, 212);
+  background-color: #0061b2;
+
+}
+button{
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 8px;
+  padding: 7px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  color: #333333;
+  border-color: #333333;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #0061b2;
+  height: 20px;
+}
+
+.logo{
+  width: 80px;
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style:none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav_links li a:hover{
+  color: #333333;
+}
+
+
+/*--------- MAIN LOCATION TITLE DISPLAYED AT TOP OF PAGE ---------*/
+#locationText{
+  font-family: 'quicksand';
+  font-size: 40px;
+  color: rgb(212, 212, 212);
+  text-align: center;
+  text-shadow: 0px 0px 32px rgb(0, 0, 0, 1);
+}
+
+/*  --------- LOCATION TEXT INPUT FIELD --------- */
+
+#locationField{
+  width: 80%;
+  margin:0 auto;
+  padding: 6px;
+  display:block;
+
+  font-family: 'quicksand';
+  font-size: 20px;
+
+  background-image: linear-gradient(#333333, #272727);
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 109px;
+  color:rgb(212, 212, 212);
+}
+
+
+/*  --------- DURATION SELECTION --------- */
+#durationSelect{
+  font-family: 'quicksand';
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+#durations{
+  font-family: 'quicksand';
+  font-size: 20px;
+  margin:5px auto;
+  padding: 6px;
+  
+
+  background-image: linear-gradient(#333333, #272727);
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 109px;
+  color:rgb(212, 212, 212);
+}
+
+
+/*--------- ENTER ---------*/
+#enterButton{
+  width: 40%;
+  padding: 10x 20px;
+
+  background-color: #333333;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 8px;
+  color:rgb(212, 212, 212);
+
+  font-size: 20px;
+  font: bold;
+  font-family: 'quicksand';
+
+  margin:0 auto;
+  display:block;
+}
+/*--------- CURRENT WEATHER DETAILS ---------*/
+.weatherInfoDetails{
+    font-family: 'quicksand';
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    margin:0;
+    
+}
+
+
+/*--------- CURRENT TIME AND LAST UPDAYED TIME ---------*/
+#timeInfo{
+    font-family: 'quicksand';
+    font-size: 22px;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    margin: 0;
+}
+
+/*--------- |CURRENT WEATHER AND FORECAST BASE STYLING| ---------*/
+.weatherInfo{
+  border: 2px solid rgb(212, 212, 212);
+    border-radius: 16px;
+    margin: 5%;
+    padding: 1%;
+}
+/*--------- CURRENT WEATHER AND FORECAST TITLE BASE STYLING ---------*/
+.infoLabel{
+  font-family: 'quicksand';
+  font-size: 30px;
+  color: rgb(212, 212, 212);
+  text-align: center;
+  margin: 2%;
+  text-decoration: underline;
+}
+
+/*--------- UPCCOMING WEATHER INLINE SCROLLBAR ---------*/
+
+.grid-container{
+	width: 95%;
+  height: 100px;
+  /*aspect-ratio: 8/1;*/
+
+  margin-left:2%; margin-right:2%;
+  margin-top: 20px; margin-bottom: 20px;
+
+  border: solid rgb(212, 212, 212) 2px;
+  border-radius: 8px;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.grid-item{
+  height: 90%; 
+	width: 14%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 4px;
+  background-color: rgba(26, 26, 26, 0.205);
+
+  font-family: 'quicksand';
+    
+    text-align: center;
+    color: rgb(212, 212, 212);
+}
+
+.grid-item-medium{
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.grid-item-large{
+  font-size: 16px;
+}
+
+.grid-item-small{
+  font-size: 12px;
+}
+
+
+/*--------- |SCROLLBAR| ---------*/
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(212, 212, 212);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+/*  --------- SWITCH --------- */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5c5c5c;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(209, 209, 209);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0061b2;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #0061b2;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+  #unitSelect{
+    text-align: center;
+    padding: 0px;
+}
+#unitsDisplay{
+    font-family: 'quicksand';
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+}
+
+
+/*  --------- |WHOLE PAGE| --------- */
+
+body{
+  margin:0;
+  padding:0;
+  /*background-image: linear-gradient(rgb(117, 154, 255) , rgb(28, 72, 192));*/
+  background-color: #333333;
+  min-width: 100%;
+  min-height: 100%;
+}

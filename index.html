@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://us.123rf.com/450wm/koblizeek/koblizeek1905/koblizeek190500016/122551387-weather-icon-symbol-modern-color-graphic-isolated-on-blue-background.jpg?ver=6"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://us.123rf.com/450wm/koblizeek/koblizeek1905/koblizeek190500016/122551387-weather-icon-symbol-modern-color-graphic-isolated-on-blue-background.jpg?ver=6"
+        alt="logo"
+        id="logo-image"
+      />
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="" #>Home</a></li>
+          <li><a href="" #>Map</a></li>
+          <li><a href="" #>Search</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#" id="sign-in"><button>Sign In</button></a>
+    </header>
+
+    <p id="locationText">Location: <br /><span id="location"></span></p>
+
+    <div>
+      <input
+        type="text"
+        id="locationField"
+        placeholder="Type Your Location Here"
+        onkeypress="handleTextBoxKey(event)"
+      />
+    </div>
+    <ul class="list"></ul>
+    <br />
+
+    <p id="durationSelect">
+      Duration<br />
+      <select name="durations" id="durations">
+        <option value="24hour">24 Hour</option>
+        <option value="7day">7 Day</option>
+        <option value="14day">14 Day</option>
+      </select>
+      <br />
+    </p>
+
+    <!--
+      <div id="unitSelect">
+      <h2>Units</h2>
+
+      <h3>Metric</h3>
+      <input type="checkBox" id="metricCheckBox" /><br />
+
+      <h3>Imperial</h3>
+      <input type="checkBox" id="imperialCheckBox" /><br />
+    </div>
+
+    -->
+
+    <!-- Rounded switch -->
+    <div id="unitSelect">
+      <p id="unitsDisplay">Metric</p>
+      <label class="switch">
+        <input type="checkbox" id="untsSwitch" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <br />
+    <br />
+    <button type="button" id="enterButton">Enter</button><br /><br />
+
+    <h2 id="error"></h2>
+
+    <div id="timeInfo">
+      <p>Timestamp: <span id="timestamp"></span></p>
+      <p>Last Updated: <span id="lastUpdatedTime"></span></p>
+    </div>
+
+    <div id="currentInfo" class="weatherInfo">
+      <span class="infoLabel" id="infoLabelCurrent">Current</span>
+      <p class="weatherInfoDetails">
+        <span id="conditionText"></span><br />
+        Temperature: <span id="temperature"></span><br />
+
+        Feels Like: <span id="feelsLike"></span><br />
+
+        Wind: <span id="windSpeed"></span> <span id="windDirection"></span>,
+        Gusts of <span id="windGustSpeed"></span><br />
+
+        Humidity: <span id="humidity"></span><br />
+
+        UV: <span id="uv"></span><br />
+      </p>
+    </div>
+
+    <div id="upComingInfo" class="weatherInfo">
+      <span class="infoLabel" id="infoLabelForecast">24 hours</span>
+
+      <div class="grid-container" id="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+        <div class="grid-item">18</div>
+
+        <div class="grid-item">19</div>
+        <div class="grid-item">20</div>
+        <div class="grid-item">21</div>
+        <div class="grid-item">22</div>
+        <div class="grid-item">23</div>
+        <div class="grid-item">24</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
