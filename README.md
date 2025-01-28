@@ -16,7 +16,7 @@ This is a simple weather app created to learn JavaScript and explore web develop
 ## How It Works
 1. Enter the name of a city in the search bar.
 2. The app sends a request to the weather API.
-3. Displays the current weather information in a neat and clean layout.
+3. Displays the current weather information as well as 24 hour forecast in a neat and clean layout.
 
 ## Getting Started
 1. Clone the repository:
@@ -25,13 +25,9 @@ This is a simple weather app created to learn JavaScript and explore web develop
    ```
 2. Open `index.html` in your favorite browser.
 
-## Future Improvements
-- Add a forecast feature.
-- Implement geolocation to auto-detect the user's location.
-- Enhance UI/UX with animations and modern design trends.
-
 ## Screenshot
-*(Insert a screenshot of your app here to give users a preview.)*
+![weather app sc](https://github.com/user-attachments/assets/a378e607-e5ae-4fe5-8d91-aca782b2f1ad)
+
 
 ## Why I Built This
 This project was my first step into learning JavaScript and understanding how to work with APIs in a web development context. It’s a simple yet functional app that showcases the basics of frontend programming.
